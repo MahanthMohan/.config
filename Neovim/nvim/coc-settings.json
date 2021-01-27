@@ -1,0 +1,109 @@
+{
+	"codeLens.enable": true,
+	"coc.preferences.extensionUpdateCheck": "weekly",
+	"coc.preferences.formatOnType": true,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"cpp",
+		"c",
+		"h",
+		"py",
+		"go",
+		"dart",
+		"java",
+		"html",
+		"css",
+		"vue",
+		"jsx",
+		"js",
+		"sh",
+		"txt",
+		"md",
+		"json",
+		"jsonc"
+	],
+	"coc.source.around.firstMatch": false,
+	"coc.source.file.ignoreHidden": false,
+	"coc.preferences.colorSupport": true,
+	"clangd.enabled": true,
+	"clangd.semanticHighlighting": true,
+	"clangd.path": "C:\\Users\\mohan\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\11.0.0\\clangd_11.0.0\\bin\\clangd.exe",
+	"clangd.arguments": [
+		"--background-index"
+	],
+	"clangd.serverCompletionRanking": true,
+	"clangd.disableDiagnostics": true,
+	"diagnostic.format": "%message [%source]",
+	"diagnostic.virtualText": true,
+	"diagnostic.checkCurrentLine": true,
+	"diagnostic.separateRelatedInformationAsDiagnostics": true,
+	"git.addGBlameToVirtualText": true,
+	"git.semanticCommit.scope": false,
+	"languageserver": {
+		"go": {
+			"command": "gopls",
+			"rootPatterns": [
+				"go.mod",
+				"go.sum"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"go"
+			]
+		},
+		"python": {
+			"command": "pylint",
+			"trace.server": "verbose",
+			"filetypes": [
+				"python"
+			],
+			"disableDynamicRegister": true
+		},
+		"tsserver": {
+			"command": "tsserver",
+			"filetypes": [
+				"js",
+				"jsx",
+				"vue",
+				"ts"
+			],
+			"disableDynamicRegister": true,
+			"trace.server": "verbose"
+		}
+	},
+	"go.enable": true,
+	"go.goplsUseDaemon": true,
+	"go.goplsOptions": {
+		"linksInHover": false,
+		"usePlaceholders": true,
+		"staticcheck": true,
+		"completeUnimported": true
+	},
+	"python.formatting.provider": "black",
+	"python.venvFolders": [
+		".envs"
+	],
+	"python.linting.enabled": false,
+	"python.linting.pylintUseMinimalCheckers": true,
+	"jedi.enable": true,
+	"jedi.startupMessage": false,
+	"java.home": "C:\\src\\openjdk",
+	"java.import.maven.enabled": true,
+	"java.completion.overwrite": false,
+	"java.format.onType.enabled": true,
+	"java.completion.guessMethodArguments": true,
+	"java.codeGeneration.useBlocks": true,
+	"java.errors.incompleteClasspath.severity": "ignore",
+	"java.signatureHelp.enabled": true,
+	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+	"java.maven.downloadSources": true,
+	"tsserver.enableJavascript": true,
+	"tsserver.npm": "C:\\src\\nodejs\\bin\\npm.exe",
+	"html.suggest.html5": true,
+	"html.validate.html": true,
+	"signature.target": "echo",
+	"suggest.timeout": 6000,
+	"suggest.numberSelect": true,
+	"suggest.asciiCharactersOnly": true,
+	"suggest.maxPreviewWidth": 120,
+	"snippets.ultisnips.enable": false,
+}

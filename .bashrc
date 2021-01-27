@@ -1,0 +1,7 @@
+alias python3="winpty python3.exe"
+alias ipython="~/.envs/env/Scripts/ipython3.exe"
+alias pip="python3 -m pip"
+alias java="~/../../src/openjdk/bin/java.exe"
+alias javac="~/../../src/openjdk/bin/javac.exe"
+alias nv="~/../../src/Neovim/bin/nvim.exe"
+alias editor="~/../../src/Neovim/bin/nvim-qt.exe"
