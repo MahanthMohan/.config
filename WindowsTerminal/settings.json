@@ -8,7 +8,7 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{2a747c49-6de8-4e73-9a57-22daa1c21922}",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
     // You can add more global application settings here.
     // To learn more about global settings, visit https://aka.ms/terminal-global-settings
@@ -35,10 +35,17 @@
 	    "fontFace": "JetBrains Mono",
 	    "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true,
-            "acrylicOpacity": 0.85,
+            "acrylicOpacity": 0.90,
 	},
         "list":
         [
+            {
+                // Make changes here to the powershell.exe profile.
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe -nologo",
+                "hidden": false,
+            },
 	    {
 		// Make changes here to the bash.exe profile
 		"guid": "{2a747c49-6de8-4e73-9a57-22daa1c21922}",
@@ -47,13 +54,6 @@
 		"icon": "C:/src/icons/bash.png",
 		"startingDirectory": "%USERPROFILE%",
 		"closeOnExit": true,
-            },
-            {
-                // Make changes here to the powershell.exe profile.
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "Windows PowerShell",
-                "commandline": "powershell.exe -nologo",
-                "hidden": false
             },
             {
                 // Make changes here to the cmd.exe profile.
