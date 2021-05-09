@@ -24,13 +24,10 @@ let g:lightline = {
       \ 'colorscheme': 'deus',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \		    ['gitbranch', 'readonly', 'filename', 'modified', 'editorName'] ]
+      \		    ['readonly', 'filename', 'modified', 'editorName'] ]
       \ },
       \ 'component': {
       \   'editorName': 'Neovim'
-      \ },
-      \ 'component_function': {
-      \    'gitbranch': 'Fugitivehead'
       \ },
       \ }
 
@@ -47,15 +44,12 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'thosakwe/vim-flutter'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'davidhalter/jedi-vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-"COC CONFIG
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -149,6 +143,11 @@ augroup mygroup
   " Update signature help on jump placeholder.
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
+
+augroup RestoreCursorShapeOnExit
+    autocmd!
+    autocmd VimLeave * set guicursor=a:blinkon1-ver20
+augroup END
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph

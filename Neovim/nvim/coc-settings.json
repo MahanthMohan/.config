@@ -8,7 +8,6 @@
 		"h",
 		"py",
 		"go",
-		"dart",
 		"java",
 		"html",
 		"css",
@@ -36,8 +35,6 @@
 	"diagnostic.virtualText": true,
 	"diagnostic.checkCurrentLine": true,
 	"diagnostic.separateRelatedInformationAsDiagnostics": true,
-	"git.addGBlameToVirtualText": true,
-	"git.semanticCommit.scope": false,
 	"languageserver": {
 		"go": {
 			"command": "gopls",
@@ -84,8 +81,6 @@
 	],
 	"python.linting.enabled": false,
 	"python.linting.pylintUseMinimalCheckers": true,
-	"jedi.enable": true,
-	"jedi.startupMessage": false,
 	"java.home": "C:\\src\\openjdk",
 	"java.import.maven.enabled": true,
 	"java.completion.overwrite": false,
@@ -105,5 +100,5 @@
 	"suggest.numberSelect": true,
 	"suggest.asciiCharactersOnly": true,
 	"suggest.maxPreviewWidth": 120,
-	"snippets.ultisnips.enable": false,
+	"snippets.ultisnips.enable": false
 }

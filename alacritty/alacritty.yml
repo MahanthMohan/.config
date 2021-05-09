@@ -1,0 +1,86 @@
+# Colors (One Darker)
+# Note I am using alacritty-ligatures until ligatures make it upstream
+
+import:
+   - ~/AppData/Roaming/alacritty/dracula.yml
+
+shell:
+        program: powershell.exe -nologo
+
+working_directory: C:/Users/mohan 
+
+background_opacity: 0.9 
+
+cursor:
+  style: Beam
+  blinking: On
+
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: JetBrains Mono
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: JetBrains Mono
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  size: 13.0
+  ligatures: true
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 4
+    y: 2
+    scrolling: 1
+  
+  history: 10000
+  decorations: full
+
+  dimensions:
+    columns: 124
+    lines: 32
+
+  dynamic_padding: false
+
+  #   # Maximum number of lines in the scrollback buffer.
+  #   # Specifying '0' will disable scrolling.
+  
+  #   # Number of lines the viewport will move for every line scrolled when
+  #   # scrollback is enabled (history > 0).
+  multiplier: 5
+
+# Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+  # selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+  live_config_reload: true
+
+debug:
+  render_timer: false
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: NumpadAdd, mods: Control, action: IncreaseFontSize }
+  - { key: NumpadSubtract, mods: Control, action: DecreaseFontSize }
+  - { key: N, mods: Control, action: SpawnNewInstance }
