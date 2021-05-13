@@ -5,7 +5,7 @@ import:
    - ~/AppData/Roaming/alacritty/dracula.yml
 
 shell:
-        program: powershell.exe -nologo
+        program: pwsh.exe -nologo
 
 working_directory: C:/Users/mohan 
 
