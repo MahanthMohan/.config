@@ -2,12 +2,9 @@
 # Note I am using alacritty-ligatures until ligatures make it upstream
 
 import:
-   - ~/AppData/Roaming/alacritty/dracula.yml
+   - ~/.config/alacritty/dracula.yml
 
-shell:
-        program: pwsh.exe -nologo
-
-working_directory: C:/Users/mohan 
+working_directory: ~ 
 
 background_opacity: 0.9 
 

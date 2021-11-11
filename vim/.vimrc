@@ -5,9 +5,7 @@ set relativenumber
 set t_Co=256
 set background=dark
 set tabstop=4
-
-" Flutter format key bindings
-nnoremap <silent> ff :!flutter format 
+highlight Pmenu ctermbg=darkgray guibg=gray
 
 " CoC key bindings
 nmap <silent> gd <Plug>(coc-definition)
@@ -24,29 +22,25 @@ let g:lightline = {
       \ 'colorscheme': 'deus',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \		    ['readonly', 'filename', 'modified', 'editorName'] ]
+      \		    	['readonly', 'filename', 'modified', 'editorName'] ]
       \ },
       \ 'component': {
-      \   'editorName': 'Neovim'
+      \   'editorName': 'Vim'
       \ },
       \ }
-
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'neoclide/coc.nvim'
-Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
-Plug 'itchyny/vim-gitbranch'
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'davidhalter/jedi-vim'
+Plug 'rust-lang/rust.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -62,7 +56,7 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=4000
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c

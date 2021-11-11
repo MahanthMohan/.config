@@ -1,6 +1,0 @@
-alias python3="winpty python3.exe"
-alias pip="python3 -m pip"
-alias java="~/../../src/openjdk/bin/java.exe"
-alias javac="~/../../src/openjdk/bin/javac.exe"
-alias editor="~/../../src/Neovim/bin/nvim-qt.exe"
-alias dev="cd ~/Documents/src"
