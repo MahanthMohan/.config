@@ -17,5 +17,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 cp zsh/.zshrc ~
 cp -r alacritty ~/.config
 echo "Installing vim plugins and setup"
-cp ./vim/script.sh
+./vim/setup.sh
 echo "--- Setup complete ---"

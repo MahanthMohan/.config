@@ -6,7 +6,7 @@ import:
 
 working_directory: ~ 
 
-background_opacity: 0.9 
+window.opacity: 0.9 
 
 cursor:
   style: Beam
@@ -51,8 +51,8 @@ window:
   decorations: full
 
   dimensions:
-    columns: 124
-    lines: 32
+    columns: 105
+    lines: 30
 
   dynamic_padding: false
 
@@ -81,3 +81,4 @@ key_bindings:
   - { key: NumpadAdd, mods: Control, action: IncreaseFontSize }
   - { key: NumpadSubtract, mods: Control, action: DecreaseFontSize }
   - { key: N, mods: Control, action: SpawnNewInstance }
+
