@@ -6,7 +6,6 @@ import:
 
 working_directory: ~ 
 
-window.opacity: 0.9 
 
 cursor:
   style: Beam
@@ -51,9 +50,10 @@ window:
   decorations: full
 
   dimensions:
-    columns: 105
-    lines: 30
+    columns: 100
+    lines: 28
 
+  opacity: 0.9
   dynamic_padding: false
 
   #   # Maximum number of lines in the scrollback buffer.
