@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+e If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/home/mahanth/.scripts:/home/mahanth/node/bin:$PATH
 export JAVA_HOME="/usr/lib/jvm/java-1.16.0-openjdk-amd64"
 
@@ -101,4 +101,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias compsci="cd /home/mahanth/Documents/ApCompSci"

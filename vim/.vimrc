@@ -29,14 +29,14 @@ let g:lightline = {
       \ },
       \ }
 
+let g:plug_threads=4
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'neoclide/coc.nvim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'leafgarland/typescript-vim'
